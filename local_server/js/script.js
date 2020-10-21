@@ -23,19 +23,22 @@ fetchUserData().then((allUsers) => {
     let textNode = document.createTextNode(answer[columnName]);
     node.appendChild(textNode);
     document.body.appendChild(node);
+    return answerList;
   });
-  // allUsers.forEach((answer) => {
-  //   answerList.push(answer[columnName]);
-  //   // Push elements into HTML with individual List items.
-  //   let node = document.createElement('li');
-  //   let textNode = document.createTextNode(answer[columnName]);
-  //   node.appendChild(textNode);
-  //   document.body.appendChild(node);
-  // });
-  // console.log(answerList);
 
-  // // Parse the number of cijfergezondheid to integers
-  // // Reset of the variables to reuse them again
-  // columnName = 'cijferGezondheid';
-  // answerList = [];
+  // Parse the number of cijfergezondheid to integers
+  // Reset of the variables to reuse them again
+  columnName = 'cijferGezondheid';
+  answerList = [];
+
+  allUsers.map((answer) => {
+    answerList.push((result = parseInt(answer[columnName], 10)));
+    return answerList;
+  });
+
+  console.log(answerList);
 });
+
+// .map .filter
+
+// Leuke uitdaging: Probeer te detecteren of waardes in een kolom kunnen worden omgezet naar bijv een number en zo ja doe dat dan.
