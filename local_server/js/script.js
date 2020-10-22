@@ -12,12 +12,24 @@ async function fetchUserData(allUsers) {
 }
 
 fetchUserData().then((allUsers) => {
-  let columnName = 'schoenmaat';
+  // Parse the number of cijfergezondheid to integers
+  // Reset of the variables to reuse them again
+  let columnName = 'cijferGezondheid';
   let answerList = [];
 
-  // print all the shoe sizes itemshj
-  allUsers.map((answer) => {
-    answerList.push(answer[columnName]);
+  let healthArray = allUsers.map((answer) => {
+    return (answerlist = parseInt(answer[columnName], 10));
+  });
+
+  console.log(healthArray);
+
+  columnName = 'schoenmaat';
+  answerList = [];
+
+  // print all the shoe sizes items, converted to integers
+  const shoeArray = allUsers.map((answer) => {
+    answerList = parseInt(answer[columnName], 10);
+    // answerList.push(answer[columnName]);
     // Push elements into HTML with individual List items.
     let node = document.createElement('li');
     let textNode = document.createTextNode(answer[columnName]);
@@ -26,19 +38,14 @@ fetchUserData().then((allUsers) => {
     return answerList;
   });
 
-  // Parse the number of cijfergezondheid to integers
-  // Reset of the variables to reuse them again
-  columnName = 'cijferGezondheid';
-  answerList = [];
+  console.log(shoeArray);
 
-  allUsers.map((answer) => {
-    answerList.push((result = parseInt(answer[columnName], 10)));
-    return answerList;
-  });
-
-  console.log(answerList);
+  // // Filter the Eyes category.
+  // let editedEyes = allUsers.filter(() => {});
+  // console.log(editedEyes);
 });
 
 // .map .filter
-
 // Leuke uitdaging: Probeer te detecteren of waardes in een kolom kunnen worden omgezet naar bijv een number en zo ja doe dat dan.
+// Chaining
+// Splice

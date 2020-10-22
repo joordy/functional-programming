@@ -24,10 +24,11 @@
 
 <!-- credits en license (bronnen) -->
 
----
+- [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [Array.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-## TO have in wiki
-
+<!-- ## TO have in wiki -->
 <!-- concept (schertsen, interface, iteraties)
 Research (programmeer principes)
 Data vrzamelen (query's, endpoints)
