@@ -7,43 +7,69 @@ console.log('works');
 async function fetchUserData(allUsers) {
   let res = await fetch('../data/userData.json');
   allUsers = await res.json();
-  // console.log(allUsers);
   return allUsers;
 }
 
 fetchUserData().then((allUsers) => {
   // Parse the number of cijfergezondheid to integers
   // Reset of the variables to reuse them again
-  let columnName = 'cijferGezondheid';
   let answerList = [];
 
   let healthArray = allUsers.map((answer) => {
-    return (answerlist = parseInt(answer[columnName], 10));
+    return (answerlist = parseInt(answer.cijferGezondheid, 10));
   });
-
   console.log(healthArray);
 
-  columnName = 'schoenmaat';
+  // print all the shoe sizes items, converted to integers
   answerList = [];
 
-  // print all the shoe sizes items, converted to integers
   const shoeArray = allUsers.map((answer) => {
-    answerList = parseInt(answer[columnName], 10);
-    // answerList.push(answer[columnName]);
+    answerList = parseInt(answer.schoenmaat, 10);
     // Push elements into HTML with individual List items.
     let node = document.createElement('li');
-    let textNode = document.createTextNode(answer[columnName]);
+    let textNode = document.createTextNode(answer.schoenmaat);
     node.appendChild(textNode);
     document.body.appendChild(node);
     return answerList;
   });
-
   console.log(shoeArray);
 
-  // // Filter the Eyes category.
-  // let editedEyes = allUsers.filter(() => {});
-  // console.log(editedEyes);
+  // Filter the Eyes category.
+  answerList = [];
+
+  let editedEyes = allUsers.map((answer) => {
+    // let brownHex = '8c713b';
+    // let blueHex = '';
+    // let lightBlueHex = '';
+    // let regEx = /{6}/;
+    answerList = answer.oogKleur
+      .toLowerCase()
+      .replace(' ', '')
+      .replace('lichtblauw', '#0DA5D4')
+      .replace('blauw', '#1645BE')
+      .replace('bruin', '#8D6955')
+      .replace('groen', '#30CD16')
+      .replace();
+    // .push(regEx, '#');
+    // .replace(regEx, )
+    // console.log(regEx);
+    return answerList;
+  });
+
+  console.log(editedEyes);
 });
+
+// .map .filter
+// Leuke uitdaging: Probeer te detecteren of waardes in een kolom kunnen worden omgezet naar bijv een number en zo ja doe dat dan.
+// Chaining
+// Splice
+
+// I need:
+
+// /rgb/ =
+// \w{6} = 6 numbers
+// \#\w{6} = hashtag en tekst
+// ^#\w{6} = starting with #
 
 // .map .filter
 // Leuke uitdaging: Probeer te detecteren of waardes in een kolom kunnen worden omgezet naar bijv een number en zo ja doe dat dan.
