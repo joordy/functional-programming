@@ -48,16 +48,16 @@ localhost:8000
 
 - [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-<!-- - [Array.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) -->
 - [String.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 - [Learn Regex](https://www.youtube.com/watch?v=rhzKDrUiJVk)
 - [RegExr](https://regexr.com/)
 - [Regexp length check](https://www.sitepoint.com/using-regular-expressions-to-check-string-length/)
 - [RGB to HEX and vice versa](https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb)
+<!-- - [Array.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) -->
 
-    <!-- ## TO have in wiki -->
-    <!-- concept (schertsen, interface, iteraties)
-    Research (programmeer principes)
-    Data vrzamelen (query's, endpoints)
-    Data pschonen (filter, clean)
-    Logboek (standup, 1 op 1 gesprekken) -->
+<!-- ## TO have in wiki -->
+<!-- concept (schertsen, interface, iteraties)
+Research (programmeer principes)
+Data vrzamelen (query's, endpoints)
+Data pschonen (filter, clean)
+Logboek (standup, 1 op 1 gesprekken) -->
