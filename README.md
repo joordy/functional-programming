@@ -14,6 +14,24 @@
 
 ### Install
 
+##### Clone
+
+```bash
+git clone <repository name>
+```
+
+##### Run server
+
+```bash
+python -m SimpleHTTPServer 8000
+```
+
+##### Go to your browser
+
+```bash
+localhost:8000
+```
+
 <!-- Hoe draai ik je project (install) -->
 
 ### Deploy

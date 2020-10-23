@@ -14,15 +14,14 @@ fetchUserData().then((allUsers) => {
   // Parse the number of cijfergezondheid to integers
   // Reset of the variables to reuse them again
   let answerList = [];
-
   let healthArray = allUsers.map((answer) => {
     return (answerlist = parseInt(answer.cijferGezondheid, 10));
   });
   console.log(healthArray);
 
-  // print all the shoe sizes items, converted to integers
+  // Print all the shoe sizes items, converted to integers
+  // New array of shoe sizes
   answerList = [];
-
   const shoeArray = allUsers.map((answer) => {
     answerList = parseInt(answer.schoenmaat, 10);
     // Push elements into HTML with individual List items.
@@ -35,13 +34,11 @@ fetchUserData().then((allUsers) => {
   console.log(shoeArray);
 
   // Filter the Eyes category.
+  // Replaced name colors, empty  spaces and everything is lowerCase
   answerList = [];
-
   let editedEyes = allUsers.map((answer) => {
-    // let brownHex = '8c713b';
-    // let blueHex = '';
-    // let lightBlueHex = '';
-    // let regEx = /{6}/;
+    // Source used from: https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+
     answerList = answer.oogKleur
       .toLowerCase()
       .replace(' ', '')
@@ -49,13 +46,10 @@ fetchUserData().then((allUsers) => {
       .replace('blauw', '#1645BE')
       .replace('bruin', '#8D6955')
       .replace('groen', '#30CD16')
-      .replace();
-    // .push(regEx, '#');
-    // .replace(regEx, )
-    // console.log(regEx);
+      .replace('#', '')
+      .replace('', '#');
     return answerList;
   });
-
   console.log(editedEyes);
 });
 
