@@ -10,10 +10,32 @@ async function fetchUserData(allUsers) {
   return allUsers;
 }
 
+// Reusable integerConverter function
+// let integerConverter = (answer, str) => {
+//   return (answerList = parseInt(answer.category));
+// };
+let answerList = [];
+
+let integerConverter = (answer, str) => {
+  return parseInt(answer.str);
+};
+
+// fetched data cleaning
 fetchUserData().then((allUsers) => {
+  //
+  answerList = [];
+
+  let numbersArray = allUsers.map((answer, schoenmaat) => {
+    return (answerlist = integerConverter(answer, schoenmaat));
+  });
+
+  console.log(numbersArray);
+  // let numbersArray = allUsers.map((answer) => {});
+  // console.log(numbersArray);
+
   // Parse the number of cijfergezondheid to integers
   // Reset of the variables to reuse them again
-  let answerList = [];
+  answerList = [];
   let healthArray = allUsers.map((answer) => {
     return (answerlist = parseInt(answer.cijferGezondheid));
   });
