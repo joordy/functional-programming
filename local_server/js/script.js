@@ -10,37 +10,8 @@ async function fetchUserData(allUsers) {
   return allUsers;
 }
 
-// Reusable integerConverter function
-// let integerConverter = (answer, str) => {
-//   return (answerList = parseInt(answer.category));
-// };
-let answerList = [];
-
-let integerConverter = (answer, str) => {
-  return parseInt(answer.str);
-};
-
 // fetched data cleaning
 fetchUserData().then((allUsers) => {
-  //
-  answerList = [];
-
-  let numbersArray = allUsers.map((answer, schoenmaat) => {
-    return (answerlist = integerConverter(answer, schoenmaat));
-  });
-
-  console.log(numbersArray);
-  // let numbersArray = allUsers.map((answer) => {});
-  // console.log(numbersArray);
-
-  // Parse the number of cijfergezondheid to integers
-  // Reset of the variables to reuse them again
-  answerList = [];
-  let healthArray = allUsers.map((answer) => {
-    return (answerlist = parseInt(answer.cijferGezondheid));
-  });
-  console.log(healthArray);
-
   // Print all the shoe sizes items, converted to integers
   // New array of shoe sizes
   answerList = [];
@@ -87,6 +58,38 @@ fetchUserData().then((allUsers) => {
   });
   console.log(editedEyes);
 });
+
+// --------------------------------
+
+// // Reusable integerConverter function
+// // let integerConverter = (answer, str) => {
+// //   return (answerList = parseInt(answer.category));
+// // };
+// let answerList = [];
+
+// let integerConverter = (answer, str) => {
+//   return parseInt(answer.str);
+// };
+// //
+// answerList = [];
+
+// let numbersArray = allUsers.map((answer, schoenmaat) => {
+//   return (answerlist = integerConverter(answer, schoenmaat));
+// });
+
+// console.log(numbersArray);
+// // let numbersArray = allUsers.map((answer) => {});
+// // console.log(numbersArray);
+
+// // Parse the number of cijfergezondheid to integers
+// // Reset of the variables to reuse them again
+// answerList = [];
+// let healthArray = allUsers.map((answer) => {
+//   return (answerlist = parseInt(answer.cijferGezondheid));
+// });
+// console.log(healthArray);
+
+// --------------------------------
 
 // .map .filter
 // Leuke uitdaging: Probeer te detecteren of waardes in een kolom kunnen worden omgezet naar bijv een number en zo ja doe dat dan.
