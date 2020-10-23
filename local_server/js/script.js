@@ -12,10 +12,18 @@ async function fetchUserData(allUsers) {
 
 // fetched data cleaning
 fetchUserData().then((allUsers) => {
+  // Parse the number of cijfergezondheid to integers
+  // Reset of the variables to reuse them again
+  let healthArray = allUsers.map((answer) => {
+    answerList = [];
+    return (answerlist = parseInt(answer.cijferGezondheid));
+  });
+  console.log(healthArray);
+
   // Print all the shoe sizes items, converted to integers
   // New array of shoe sizes
-  answerList = [];
   const shoeArray = allUsers.map((answer) => {
+    answerList = [];
     answerList = parseInt(answer.schoenmaat);
     // Push elements into HTML with individual List items.
     let node = document.createElement('li');
@@ -28,8 +36,10 @@ fetchUserData().then((allUsers) => {
 
   // Filter the Eyes category.
   // Replaced name colors, empty  spaces and everything is lowerCase
-  answerList = [];
+  // answerList = [];
   let editedEyes = allUsers.map((answer) => {
+    answerList = [];
+
     // Source used from: https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
     const rgbCode = '(139,69,19)'; // RGB code to  replacee
 
@@ -37,10 +47,10 @@ fetchUserData().then((allUsers) => {
     let greenRGB = 69;
     let blueRGB = 19;
 
-    function ChangeRGBtoHEX(redRGB, greenRGB, blueRGB) {
+    let ChangeRGBtoHEX = (redRGB, greenRGB, blueRGB) => {
       // Change values by using shift (source: https://developer.mozilla.org/en-US/search?q=bit+shift, first  two results)
       return ((1 << 24) + (redRGB << 16) + (greenRGB << 8) + blueRGB).toString(16).slice(1);
-    }
+    };
 
     answerList = answer.oogKleur
       .toUpperCase()
@@ -80,14 +90,6 @@ fetchUserData().then((allUsers) => {
 // console.log(numbersArray);
 // // let numbersArray = allUsers.map((answer) => {});
 // // console.log(numbersArray);
-
-// // Parse the number of cijfergezondheid to integers
-// // Reset of the variables to reuse them again
-// answerList = [];
-// let healthArray = allUsers.map((answer) => {
-//   return (answerlist = parseInt(answer.cijferGezondheid));
-// });
-// console.log(healthArray);
 
 // --------------------------------
 
