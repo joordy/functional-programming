@@ -15,7 +15,7 @@ fetchUserData().then((allUsers) => {
   // Reset of the variables to reuse them again
   let answerList = [];
   let healthArray = allUsers.map((answer) => {
-    return (answerlist = parseInt(answer.cijferGezondheid, 10));
+    return (answerlist = parseInt(answer.cijferGezondheid));
   });
   console.log(healthArray);
 
@@ -23,7 +23,7 @@ fetchUserData().then((allUsers) => {
   // New array of shoe sizes
   answerList = [];
   const shoeArray = allUsers.map((answer) => {
-    answerList = parseInt(answer.schoenmaat, 10);
+    answerList = parseInt(answer.schoenmaat);
     // Push elements into HTML with individual List items.
     let node = document.createElement('li');
     let textNode = document.createTextNode(answer.schoenmaat);
@@ -38,16 +38,29 @@ fetchUserData().then((allUsers) => {
   answerList = [];
   let editedEyes = allUsers.map((answer) => {
     // Source used from: https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+    const rgbCode = '(139,69,19)'; // RGB code to  replacee
+
+    let redRGB = 139; // individual integers, to  give as parameter
+    let greenRGB = 69;
+    let blueRGB = 19;
+
+    function ChangeRGBtoHEX(redRGB, greenRGB, blueRGB) {
+      // Change values by using shift (source: https://developer.mozilla.org/en-US/search?q=bit+shift, first  two results)
+      return ((1 << 24) + (redRGB << 16) + (greenRGB << 8) + blueRGB).toString(16).slice(1);
+    }
 
     answerList = answer.oogKleur
-      .toLowerCase()
-      .replace(' ', '')
-      .replace('lichtblauw', '#0DA5D4')
-      .replace('blauw', '#1645BE')
-      .replace('bruin', '#8D6955')
-      .replace('groen', '#30CD16')
-      .replace('#', '')
-      .replace('', '#');
+      .toUpperCase()
+      .replace(' ', '') // Removes spaces
+      .replace('#', '') // Removes all hashtags
+      .replace('LICHTBLAUW', '0DA5D4') // Transforms color code
+      .replace('BLAUW', '1645BE')
+      .replace('BRUIN', '8D6955')
+      .replace('GROEN', '30CD16')
+      .replace('RGB', '') // Removes RGB
+      .replace('.', ',') // transform dot to comma
+      .replace(rgbCode, ChangeRGBtoHEX(redRGB, greenRGB, blueRGB)) // change static rgb code, starts function ChangeRGBtoHEX
+      .replace('', '#'); // place # for every hex-colorcode for correct markup
     return answerList;
   });
   console.log(editedEyes);

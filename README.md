@@ -17,7 +17,7 @@
 ##### Clone
 
 ```bash
-git clone <repository name>
+git clone https://github.com/joordy/functional-programming.git
 ```
 
 ##### Run server
