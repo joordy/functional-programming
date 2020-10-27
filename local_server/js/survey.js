@@ -7,7 +7,7 @@ let selectedColumn = null;
 
 getData(endpoint).then((userData) => {
   console.log('hello, data is loaded');
-
+  console.log(userData);
   // Print all the health numbers, converted to integers
   selectedColumn = 'cijferGezondheid';
   const convertGezondheid = parseIntegers(userData, selectedColumn);
@@ -21,9 +21,14 @@ getData(endpoint).then((userData) => {
   selectedColumn = 'oogKleur';
   const convertEyecolor = parseEyeColor(userData, selectedColumn);
 
+  // Filter all the students who wants to earn above  Jan Modaal:
+  selectedColumn = 'hoeveelPerMaandWillenVerdienen';
+  const convertSalary = parseSalary(userData, selectedColumn);
+
   console.log('cijferGezondheid :', convertGezondheid);
   console.log('Shoesize :', convertShoesize);
   console.log('Eyecolor :', convertEyecolor);
+  console.log(convertSalary.length, 'people wants to earn more than Jan, see:', convertSalary);
 });
 
 async function getData(url) {
@@ -68,6 +73,11 @@ function parseEyeColor(dataArray, key) {
       .replace('', '#'); // place # for every hex-colorcode for correct markup
   });
   return allColors;
+}
+
+function parseSalary(dataArray, key) {
+  let salary = dataArray.map((item) => parseInt(item[key]));
+  return salary.filter((money) => money > 3050);
 }
 // --------------------------------
 // .map .filter
