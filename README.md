@@ -1,6 +1,12 @@
 # functional-programming
 
-### Description
+### Research Case
+
+**How well developed are the parking garages devided around the Randstad, the Netherlands busiest region. [Location API](https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34) and [Specs API](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s)**
+
+For my project I will take a look to the theme of parking the car inside the Randstad. The Randstad is the highest population density with in total 8.2 million residents. With the research case I will take a look about how the parking garages look like, how they are devided, and if they are prepared for future, with maximum drive-throught height, EV charging, etc.
+
+For a more detailled look, you can have a look inside my wiki: [Concept](https://github.com/joordy/functional-programming/wiki/Concept).
 
 <!-- Wat doet je project (description) -->
 
@@ -38,13 +44,20 @@ localhost:8000
 
 <!-- Hoe draai ik je project (install) -->
 
-### Deploy
+<!-- ### Deploy -->
 
 <!-- Live link van je project (deploy) -->
 
 ### Bronnen
 
 <!-- credits en license (bronnen) -->
+
+#### Data sources:
+
+[Geo Parkeer garages API](https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34)
+[Open Data parkeren SPECIFICATIES PARKEERGEBIED API](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s)
+
+#### Code Sources:
 
 - [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
