@@ -7,7 +7,7 @@ let selectedColumn = null;
 
 getData(endpoint).then((userData) => {
   console.log('hello, data is loaded');
-  console.log(userData);
+
   // Print all the health numbers, converted to integers
   selectedColumn = 'cijferGezondheid';
   const convertGezondheid = parseIntegers(userData, selectedColumn);
@@ -52,10 +52,10 @@ function parseIntegers(dataArray, key) {
 function parseEyeColor(dataArray, key) {
   let allColors = dataArray.map((item) => item[key]);
   const rgbCode = '(139,69,19)'; // RGB code to  replacee
-  let redRGB = 139; // individual integers, to  give as parameter
-  let greenRGB = 69;
-  let blueRGB = 19;
-  let ChangeRGBtoHEX = (redRGB, greenRGB, blueRGB) => {
+  const redRGB = 139; // individual integers, to  give as parameter
+  const greenRGB = 69;
+  const blueRGB = 19;
+  const ChangeRGBtoHEX = (redRGB, greenRGB, blueRGB) => {
     return ((1 << 24) + (redRGB << 16) + (greenRGB << 8) + blueRGB).toString(16).slice(1);
   };
   allColors = allColors.map(function (color) {
@@ -76,11 +76,10 @@ function parseEyeColor(dataArray, key) {
 }
 
 function parseSalary(dataArray, key) {
-  let salary = dataArray.map((item) => parseInt(item[key]));
+  const salary = dataArray.map((item) => parseInt(item[key]));
   return salary.filter((money) => money > 3050);
 }
 // --------------------------------
-// .map .filter
 // Leuke uitdaging: Probeer te detecteren of waardes in een kolom kunnen worden omgezet naar bijv een number en zo ja doe dat dan.
 // Chaining
 // Splice
