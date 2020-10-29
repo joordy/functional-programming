@@ -1,42 +1,40 @@
 # functional-programming
 
-### Research Case
+## Research Case
 
 **How well developed are the parking garages devided around the Randstad, the Netherlands busiest region. [Location API](https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34) and [Specs API](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s)**
 
-For my project I will take a look to the theme of parking the car inside the Randstad. The Randstad is the highest population density with in total 8.2 million residents. With the research case I will take a look about how the parking garages look like, how they are devided, and if they are prepared for future, with maximum drive-throught height, EV charging, etc.
-
-For a more detailled look, you can have a look inside my wiki: [Concept](https://github.com/joordy/functional-programming/wiki/Concept).
+For my project I will take a look to the theme of parking the car inside the Randstad. The Randstad is the highest population density with in total 8.2 million residents. With the research case I will take a look about how the parking garages look like, how they are devided, and if they are prepared for future, with maximum drive-throught height, EV charging, etc. For a more detailled look, you can have a look inside my wiki: [Concept](https://github.com/joordy/functional-programming/wiki/Concept).
 
 <!-- Wat doet je project (description) -->
 
-### Features
+## Features
 
 Inside this repository i've cleaned our dataset from the University of Amsterdam. In this dataset the students gave a lot of information. In the survey it was possible to provide textual answers. With this textual answers there are a lot of different options, which means the same. By using some functional patterns I cleaned the dataset, and transfered for example all the colors to HEX, and changed all the textual numbers to integers.
 
 <!-- Welke features zijn er (features) -->
 
-### Dataset
+## Dataset
 
 We are currently using the Information Design survey of the Communication and Multimedia Design students from the University of Amsterdam. This is an private survey which is not allowed to be published on the internet. To have an working repository, and you're from the University of Amsterdam, please feel free to contact me to recieve the dataset.
 
 <!-- Welke data gebruik je (dataset) -->
 
-### Install
+## Install
 
-##### Clone the GitHub repository
+#### Clone the GitHub repository
 
 ```bash
 git clone https://github.com/joordy/functional-programming.git
 ```
 
-##### Starting up local server with the following Python command
+#### Starting up local server with the following Python command
 
 ```bash
 python -m SimpleHTTPServer 8000
 ```
 
-##### Visit project
+#### Visit project
 
 ```bash
 localhost:8000
@@ -48,14 +46,13 @@ localhost:8000
 
 <!-- Live link van je project (deploy) -->
 
-### Bronnen
+## Bronnen
 
 <!-- credits en license (bronnen) -->
 
 #### Data sources:
 
 - RDW. (2020, 29 oktober). GEO Parkeer Garages | Open Data | RDW. Geraadpleegd op 22 oktober 2020, van https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34
-
 - RDW. (2020, 29 oktober). Open Data Parkeren: SPECIFICATIES PARKEERGEBIED | Open Data | RDW. Geraadpleegd op 23 oktober 2020, van https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s
 
 #### Code Sources:
