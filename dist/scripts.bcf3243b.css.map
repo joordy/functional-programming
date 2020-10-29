@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss/index.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;AAGF;EACE;EACA","file":"scripts.bcf3243b.css","sourceRoot":"../src","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: black;\n  color: white;\n}\n"]}

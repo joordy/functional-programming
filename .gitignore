@@ -1,5 +1,5 @@
 *.csv
-*.json
+# *.json
 node_modules/
 data/
 local_server/data
