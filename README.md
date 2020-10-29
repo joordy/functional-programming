@@ -64,6 +64,10 @@ localhost:8000
 - MDN. (2020a, 16 juli). String.prototype.replace(). Geraadpleegd op 23 oktober 2020, van https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 - Down, T. (2011, 11 april). RGB to hex and hex to RGB. Geraadpleegd op 23 oktober 2020, van https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
 
+## License
+
+This is a repository which is licensed as MIT. Jordy Fronik ©️ 2020.
+
 <!-- - Web Dev Simplified. (2019, 29 oktober). Learn Regular Expressions In 20 Minutes. Geraadpleegd op 23 oktober 2020, van https://www.youtube.com/watch?v=rhzKDrUiJVk
 - RegExr. (z.d.). RegExr: Learn, Build, & Test RegEx. Geraadpleegd op 23 oktober 2020, van https://regexr.com/
 - Green, D. M. (2014, 30 juni). Using Regular Expressions to Check String Length - SitePoint. Geraadpleegd op 23 oktober 2020, van https://www.sitepoint.com/using-regular-expressions-to-check-string-length/ -->
