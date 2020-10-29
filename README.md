@@ -60,10 +60,13 @@ localhost:8000
 
 #### Code Sources:
 
+- MDN. (2020b, 30 juli). Fetch API. Geraadpleegd op 20 oktober 2020, van https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+- MDN. (2020d, 19 oktober). Using Fetch. Geraadpleegd op 20 oktober 2020, van https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 - MDN. (2020, 8 oktober). Array.prototype.map(). Geraadpleegd op 21 oktober 2020, van https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 - MDN. (2020, 8 oktober). Array.prototype.filter(). Geraadpleegd op 22 oktober 2020, van https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 - MDN. (2020a, 16 juli). String.prototype.replace(). Geraadpleegd op 23 oktober 2020, van https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 - Down, T. (2011, 11 april). RGB to hex and hex to RGB. Geraadpleegd op 23 oktober 2020, van https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+
 <!-- - Web Dev Simplified. (2019, 29 oktober). Learn Regular Expressions In 20 Minutes. Geraadpleegd op 23 oktober 2020, van https://www.youtube.com/watch?v=rhzKDrUiJVk
 - RegExr. (z.d.). RegExr: Learn, Build, & Test RegEx. Geraadpleegd op 23 oktober 2020, van https://regexr.com/
 - Green, D. M. (2014, 30 juni). Using Regular Expressions to Check String Length - SitePoint. Geraadpleegd op 23 oktober 2020, van https://www.sitepoint.com/using-regular-expressions-to-check-string-length/ -->
