@@ -54,18 +54,20 @@ localhost:8000
 
 #### Data sources:
 
-[Geo Parkeer garages API](https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34)
-[Open Data parkeren SPECIFICATIES PARKEERGEBIED API](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s)
+- RDW. (2020, 29 oktober). GEO Parkeer Garages | Open Data | RDW. Geraadpleegd op 22 oktober 2020, van https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34
+
+- RDW. (2020, 29 oktober). Open Data Parkeren: SPECIFICATIES PARKEERGEBIED | Open Data | RDW. Geraadpleegd op 23 oktober 2020, van https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s
 
 #### Code Sources:
 
-- [Array.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [Array.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-- [String.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
-- [Learn Regex](https://www.youtube.com/watch?v=rhzKDrUiJVk)
-- [RegExr](https://regexr.com/)
-- [Regexp length check](https://www.sitepoint.com/using-regular-expressions-to-check-string-length/)
-- [RGB to HEX and vice versa](https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb)
+- MDN. (2020, 8 oktober). Array.prototype.map(). Geraadpleegd op 21 oktober 2020, van https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+- MDN. (2020, 8 oktober). Array.prototype.filter(). Geraadpleegd op 22 oktober 2020, van https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+- MDN. (2020a, 16 juli). String.prototype.replace(). Geraadpleegd op 23 oktober 2020, van https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+- Down, T. (2011, 11 april). RGB to hex and hex to RGB. Geraadpleegd op 23 oktober 2020, van https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+<!-- - Web Dev Simplified. (2019, 29 oktober). Learn Regular Expressions In 20 Minutes. Geraadpleegd op 23 oktober 2020, van https://www.youtube.com/watch?v=rhzKDrUiJVk
+- RegExr. (z.d.). RegExr: Learn, Build, & Test RegEx. Geraadpleegd op 23 oktober 2020, van https://regexr.com/
+- Green, D. M. (2014, 30 juni). Using Regular Expressions to Check String Length - SitePoint. Geraadpleegd op 23 oktober 2020, van https://www.sitepoint.com/using-regular-expressions-to-check-string-length/ -->
+
 <!-- - [Array.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) -->
 
 <!-- ## TO have in wiki -->
