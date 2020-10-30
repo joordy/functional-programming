@@ -2366,9 +2366,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.endpoint = void 0;
-// export const endpoint = ' https://opendata.rdw.nl/resource/t5pc-eb34.json ';
-var endpoint = 'modules/data/userData.json'; //let selectedColumn = null;
-
+var endpoint = ' https://opendata.rdw.nl/resource/t5pc-eb34.json ';
 exports.endpoint = endpoint;
 },{}],"scripts/index.js":[function(require,module,exports) {
 "use strict";
@@ -2387,17 +2385,15 @@ console.log('hello');
 var selectedColumn = null;
 getData(_getData2.endpoint).then(function (data) {
   console.log('hello, data is loaded');
-  console.log(data); // selectedColumn = 'areaid';
-  // const areaManagerID = getAreaManager(data, selectedColumn);
-  // console.log(areaManagerID);
+  console.log(data);
+  selectedColumn = 'areaid';
+  var areaManagerID = getAreaManager(data, selectedColumn);
+  console.log(areaManagerID);
 });
 
 function getData(_x) {
   return _getData.apply(this, arguments);
-} // // Place all Area Manager ID's inside an new array
-// function getAreaManager(dataArray, key) {
-//   return dataArray.map((item) => item[key]);
-// }
+} // Place all Area Manager ID's inside an new array
 
 
 function _getData() {
@@ -2434,6 +2430,12 @@ function _getData() {
   }));
   return _getData.apply(this, arguments);
 }
+
+function getAreaManager(dataArray, key) {
+  return dataArray.map(function (item) {
+    return item[key];
+  });
+}
 },{"@babel/runtime-corejs2/regenerator":"../node_modules/@babel/runtime-corejs2/regenerator/index.js","@babel/runtime-corejs2/helpers/asyncToGenerator":"../node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js","./../scss/index.scss":"scss/index.scss","./modules/getData":"scripts/modules/getData.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -2462,7 +2464,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50858" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57288" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

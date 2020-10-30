@@ -7,9 +7,9 @@ let selectedColumn = null;
 getData(endpoint).then((data) => {
   console.log('hello, data is loaded');
   console.log(data);
-  // selectedColumn = 'areaid';
-  // const areaManagerID = getAreaManager(data, selectedColumn);
-  // console.log(areaManagerID);
+  selectedColumn = 'areaid';
+  const areaManagerID = getAreaManager(data, selectedColumn);
+  console.log(areaManagerID);
 });
 
 async function getData(url) {
@@ -22,7 +22,7 @@ async function getData(url) {
   }
 }
 
-// // Place all Area Manager ID's inside an new array
-// function getAreaManager(dataArray, key) {
-//   return dataArray.map((item) => item[key]);
-// }
+// Place all Area Manager ID's inside an new array
+function getAreaManager(dataArray, key) {
+  return dataArray.map((item) => item[key]);
+}
