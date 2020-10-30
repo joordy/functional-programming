@@ -6,13 +6,13 @@
 
 For my project for De Volkskrant _[debrief](https://github.com/joordy/functional-programming/wiki/Debrief)_ I will take a look to the theme of parking the car inside the Randstad. The Randstad is the highest population density with in total 8.2 million residents. With the research case I will take a look about how the parking garages look like, how they are divided, and if they are prepared for future, with maximum drive-through height, EV charging, etc. For a more detailed look, you can have a look inside my wiki: [Concept](https://github.com/joordy/functional-programming/wiki/Concept).
 
-<!-- Wat doet je project (description) -->
+---
 
 ## Features
 
 Inside this repository i've cleaned our dataset from the University of Amsterdam. In this dataset the students gave a lot of information. In the survey it was possible to provide textual answers. With this textual answers there are a lot of different options, which means the same. By using some functional patterns I cleaned the dataset, and transfer for example all the colors to HEX, and changed all the textual numbers to integers.
 
-<!-- Welke features zijn er (features) -->
+---
 
 ## Dataset
 
@@ -20,7 +20,7 @@ We are currently using the Information Design survey of the Communication and Mu
 
 The invalid data I cleaned up with functional patterns. For example filtering on the the salary that students want to earn, or change string numbers to valid integers, and rewriting the eye-colors.
 
-<!-- Interesting pattern -->
+---
 
 ## Interesting functional pattern
 
@@ -28,7 +28,7 @@ My most interesting functional pattern is my parseEyeColor() function.
 
 https://github.com/joordy/functional-programming/blob/3c00ced7f2d830f0234845faeb8b8c5f8e3ca3e4/functional_patterns/js/survey.js#L52
 
-<!-- Installment -->
+---
 
 ## Install
 
@@ -50,13 +50,7 @@ python -m SimpleHTTPServer 8000
 localhost:8000
 ```
 
-<!-- Hoe draai ik je project (install) -->
-
-<!-- ### Deploy -->
-
-<!-- Live link van je project (deploy) -->
-
-<!-- Sources -->
+---
 
 ## Sources
 
@@ -74,7 +68,7 @@ localhost:8000
 - MDN. (2020a, 16 juli). String.prototype.replace(). Recieved on october 23 2020, from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 - Down, T. (2011, 11 april). RGB to hex and hex to RGB. Recieved on october 23 2020, from https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
 
-<!-- License -->
+---
 
 ## License
 
