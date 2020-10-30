@@ -1,6 +1,6 @@
 # functional-programming
 
-## Research Case
+## :page_facing_up: Research Case
 
 **How well developed are the parking garages devided around the Randstad, the Netherlands busiest region. [Location API](https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34) and [Specs API](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s)**
 
@@ -8,13 +8,13 @@ For my project for De Volkskrant _[debrief](https://github.com/joordy/functional
 
 ---
 
-## Features
+## :flashlight: Features
 
 Inside this repository i've cleaned our dataset from the University of Amsterdam. In this dataset the students gave a lot of information. In the survey it was possible to provide textual answers. With this textual answers there are a lot of different options, which means the same. By using some functional patterns I cleaned the dataset, and transfer for example all the colors to HEX, and changed all the textual numbers to integers.
 
 ---
 
-## Dataset
+## :chart: Dataset
 
 We are currently using the Information Design survey of the Communication and Multimedia Design students from the University of Amsterdam. This is an private survey which is not allowed to be published on the internet. To have an working repository, and you're from the University of Amsterdam, please feel free to contact me to receive the dataset.
 
@@ -22,7 +22,7 @@ The invalid data I cleaned up with functional patterns. For example filtering on
 
 ---
 
-## Interesting functional pattern
+## :key: Interesting functional pattern
 
 My most interesting functional pattern is my parseEyeColor() function.
 
@@ -30,7 +30,7 @@ https://github.com/joordy/functional-programming/blob/3c00ced7f2d830f0234845faeb
 
 ---
 
-## Install
+## :rocket: Install
 
 #### Clone the GitHub repository
 
@@ -52,7 +52,11 @@ localhost:8000
 
 ---
 
-## Sources
+## :airplane: Deployment
+
+---
+
+## :mag: Sources
 
 #### Data sources:
 
@@ -70,7 +74,7 @@ localhost:8000
 
 ---
 
-## License
+## :lock: License
 
 This is a repository which is licensed as MIT. Jordy Fronik ©️ 2020.
 
