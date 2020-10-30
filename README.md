@@ -54,6 +54,8 @@ localhost:8000
 
 ## :airplane: Deployment
 
+[joordy.github.io](https://joordy.github.io/functional-programming/), for a quick look in the console
+
 ---
 
 ## :mag: Sources
