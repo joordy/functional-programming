@@ -58,7 +58,7 @@ function parseEyeColor(dataArray, key) {
   const ChangeRGBtoHEX = (redRGB, greenRGB, blueRGB) => {
     return ((1 << 24) + (redRGB << 16) + (greenRGB << 8) + blueRGB).toString(16).slice(1);
   };
-  allColors = allColors.map(function (color) {
+  allColors = allColors.map((color) => {
     return color
       .toUpperCase()
       .replace(' ', '') // Removes spaces
