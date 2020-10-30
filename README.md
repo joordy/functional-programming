@@ -46,7 +46,7 @@ localhost:8000
 
 <!-- Live link van je project (deploy) -->
 
-## Bronnen
+## Sources
 
 <!-- credits en license (bronnen) -->
 
