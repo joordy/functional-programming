@@ -18,6 +18,8 @@ Inside this repository i've cleaned our dataset from the University of Amsterdam
 
 We are currently using the Information Design survey of the Communication and Multimedia Design students from the University of Amsterdam. This is an private survey which is not allowed to be published on the internet. To have an working repository, and you're from the University of Amsterdam, please feel free to contact me to receive the dataset.
 
+The invalid data I cleaned up with functional patterns. For example filtering on the the salary that students want to earn, or change string numbers to valid integers, and rewriting the eye-colors.
+
 <!-- Interesting pattern -->
 
 ## Interesting functional pattern
