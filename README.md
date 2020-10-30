@@ -38,6 +38,12 @@ https://github.com/joordy/functional-programming/blob/3c00ced7f2d830f0234845faeb
 git clone https://github.com/joordy/functional-programming.git
 ```
 
+#### Add userdata
+
+```bash
+Place a file called userData.json inside the _functional patterns_ folder.
+```
+
 #### Starting up local server with the following Python command
 
 ```bash
@@ -54,7 +60,7 @@ localhost:8000
 
 ## :airplane: Deployment
 
-[joordy.github.io](https://joordy.github.io/functional-programming/), for a quick look in the console
+[joordy.github.io](https://joordy.github.io/functional-programming/), for a quick look inside the browser console. Be aware that you need the userData. Otherwise it won't work.
 
 ---
 
