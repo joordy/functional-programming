@@ -24,9 +24,11 @@ The invalid data I cleaned up with functional patterns. For example filtering on
 
 ## :key: Interesting functional pattern
 
-My most interesting functional pattern is my parseEyeColor() function.
+My most interesting functional pattern is my parseEyeColor() function. It can be found inside the directory functional_patterns > js > survey.js on line 52.
 
-https://github.com/joordy/functional-programming/blob/3c00ced7f2d830f0234845faeb8b8c5f8e3ca3e4/functional_patterns/js/survey.js#L52
+```js
+function parseEyeColor(dataArray, key) {
+```
 
 ---
 
@@ -55,12 +57,6 @@ python -m SimpleHTTPServer 8000
 ```bash
 localhost:8000
 ```
-
----
-
-## :airplane: Deployment
-
-[joordy.github.io](https://joordy.github.io/functional-programming/), for a quick look inside the browser console. Be aware that you need the userData. Otherwise it won't work.
 
 ---
 
